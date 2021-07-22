@@ -1,0 +1,6 @@
+QUARTO PROJETO DA FORMAÇÃO ANGULAR PARA APLICAR CONHECIMENTO ADQUIRIDO NO ALURA CURSOS.
+
+
+LINGUAGENS: TYPE SCRIPT e JAVASCRIPT COM O FRAMEWORK ANGULAR 
+Exemplo de aplicação de acessibilidade, visando evoluir no design de componentes com essa diretiva.
+BY: OTÁVIO AUGUSTO 22/07/2021
