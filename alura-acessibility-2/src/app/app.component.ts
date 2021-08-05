@@ -1,4 +1,7 @@
-import { ModalService, ModalRef } from './shared/components/modal/services/modal.service';
+import {
+  ModalService,
+  ModalRef,
+} from './shared/components/modal/services/modal.service';
 import { Component, ViewChild, TemplateRef } from '@angular/core';
 
 @Component({
@@ -11,10 +14,10 @@ export class AppComponent {
   title = 'a11y-p2';
   public firstName = 'Otávio';
   public ModalRef: ModalRef;
-  constructor(private modalservice: ModalService) {}
+  constructor(private modalService: ModalService) {}
 
   public show(): void {
-    this.ModalRef = this.modalservice.open({
+    this.ModalRef = this.modalService.open({
       templateRef: this.modalTemplateRef,
       title: 'User Details',
     });

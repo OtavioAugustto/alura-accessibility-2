@@ -3,8 +3,8 @@ import { ModalConfig } from './interfaces/modal-config';
 
 @Component({
   selector: 'app-modal',
-  template: './modal.component.html',
-  styleUrls: ['./modal.component.scss'],
+  templateUrl: './modal.component.html',
+  styleUrls: ['modal.component.scss']
 })
 export class ModalComponent {
   public config: ModalConfig;
