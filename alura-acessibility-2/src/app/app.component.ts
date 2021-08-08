@@ -1,25 +1,23 @@
-import {
-  ModalService,
-  ModalRef,
-} from './shared/components/modal/services/modal.service';
-import { Component, ViewChild, TemplateRef } from '@angular/core';
+import { Component, TemplateRef, ViewChild } from '@angular/core';
+import { ModalRef, ModalService } from './shared/components/modal/services/modal.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   @ViewChild('modal') public modalTemplateRef: TemplateRef<any>;
   title = 'a11y-p2';
   public firstName = 'Otávio';
-  public ModalRef: ModalRef;
+  public modalRef: ModalRef;
+
   constructor(private modalService: ModalService) {}
 
   public show(): void {
-    this.ModalRef = this.modalService.open({
+    this.modalRef = this.modalService.open({
       templateRef: this.modalTemplateRef,
-      title: 'User Details',
+      title: 'User Details'
     });
   }
 }
